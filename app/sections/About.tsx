@@ -33,7 +33,7 @@ const About = () => {
                         />
                          <AnimatedBody
                         delay={0.3}
-                        text="Formerly worked as a Coding Teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript"
+                        text="Formerly worked as a Coding Teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
                     />
                     </div>
                 </div>
