@@ -22,7 +22,7 @@ const Contact = () => {
                     className={`flex flex-col items-start justify-center ${spaceGrotesk.className} relative w-full sm:items-center lg:max-w-[1440px] `}
                 >
                     <AnimatedWords
-                        title={"contact"}
+                        title={"contact me"}
                         style={
                             "flex max-w-[400px] flex-col items-start text-left text-[60px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[80px] md:text-[120px] lg:text-center lg:text-[150px] xl:text-[250px]"
                         }
