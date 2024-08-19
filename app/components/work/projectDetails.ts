@@ -41,7 +41,7 @@ export const projects = [
         available: "true"
     },
     {
-        id: "3",
+        id: "2",
         name: "Coming Soon",
         description: "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",
         technologies: [GiGuitarHead],
