@@ -25,7 +25,7 @@ const ProjectGrid = () => {
                         techLinks={project.techLinks}
                         github={project.github}
                         demo={project.demo}
-                        image={project.image}
+                        images={project.images}
                         available={project.available}
                     />
                 ))}

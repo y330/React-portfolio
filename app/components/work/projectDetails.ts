@@ -5,6 +5,13 @@ import {
     SiTailwindcss,
     SiTypescript,
     SiCytoscapedotjs,
+    SiPython,
+    SiWebpack,
+    SiPostcss,
+    SiSass,
+    SiSvelte,
+    SiJavascript,
+    SiGooglechrome,
 } from "react-icons/si";
 import { GiGuitarHead } from "react-icons/gi";
 
@@ -19,7 +26,7 @@ export type ProjectProps = {
     techLinks: string[];
     github: string;
     demo: string;
-    image: string;
+    images: string[];
     available: boolean;
 };
 export const projects = [
@@ -50,7 +57,11 @@ export const projects = [
         ],
         github: "https:github/coming-soon",
         demo: "https://yonah.vercel.app",
-        image: "/projects/portfolio.png",
+        images: [
+            "/projects/portfolio_1.png",
+            "/projects/portfolio_2.png",
+            "/projects/portfolio_3.png",
+        ],
         available: true,
     },
     {
@@ -67,46 +78,59 @@ export const projects = [
         ],
         github: "https://github.com/BioAnalyticResource/ePlant",
         demo: "https://bioanalyticresource.github.io/ePlant/",
-        image: "/projects/eplant.png",
+        images: ["/projects/eplant_1.png", "/projects/eplant_2.png"],
         available: true,
     },
-    // {
-    //     id: 2,
-    //     name: "ePlant",
-    //     description:
-    //         "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, using the BAR api",
-    //     technologies: [SiTypescript, SiReact, SiCytoscapedotjs],
-    //     techNames: ["TypeScript", "React", "Cytoscape"],
-    //     techLinks: [
-    //         "https://www.typescriptlang.org",
-    //         "https://reactjs.org",
-    //         "https://cytoscape.org/",
-    //     ],
-    //     github: "https://github.com/BioAnalyticResource/ePlant",
-    //     demo: "https://bioanalyticresource.github.io/ePlant/",
-    //     image: "/projects/eplant.png",
-    //     available: true,
-    // },
-    // {
-    //     id: 3,
-    //     name: "ePlant",
-    //     description:
-    //         "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, using the BAR api",
-    //     technologies: [SiTypescript, SiReact, SiCytoscapedotjs],
-    //     techNames: ["TypeScript", "React", "Cytoscape"],
-    //     techLinks: [
-    //         "https://www.typescriptlang.org",
-    //         "https://reactjs.org",
-    //         "https://cytoscape.org/",
-    //     ],
-    //     github: "https://github.com/BioAnalyticResource/ePlant",
-    //     demo: "https://bioanalyticresource.github.io/ePlant/",
-    //     image: "/projects/eplant.png",
-    //     available: true,
-    // },
-
     {
         id: 2,
+        name: "QuickSum",
+        description: "Aesthetic essay summarizer.",
+        technologies: [SiSvelte, SiTypescript, SiSass, SiWebpack, SiPostcss],
+        techNames: ["Svelte", "TypeScript", "SASS", "Webpack", "PostCSS"],
+        techLinks: [
+            "https://svelte.dev/",
+            "https://www.typescriptlang.org",
+            "https://sass-lang.com/",
+            "https://webpack.js.org/",
+            "https://postcss.org/",
+        ],
+        github: "https://github.com/y330/quicksum",
+        demo: "https://quicksum.vercel.app/",
+        images: ["/projects/quicksum.png"],
+        available: true,
+    },
+
+    {
+        id: 3,
+        name: "FragmentQR",
+        description:
+            "Browser extension for creating QR codes to text highlights",
+        technologies: [SiJavascript, SiGooglechrome],
+        techNames: ["JavaScript", "Chrome APIs"],
+        techLinks: [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "https://developer.chrome.com/docs/extensions/reference/api",
+        ],
+        github: "https://github.com/y330/FragmentQR",
+        demo: "https://chrome.google.com/webstore/detail/fragmentqr/cabodnfakameckfbbgkciiifempglloj",
+        images: ["/projects/fragmentqr_1.png", "/projects/fragmentqr_2.png"],
+        available: true,
+    },
+    {
+        id: 4,
+        name: "Pydash",
+        description:
+            "Python implementation of Geometry dash, a rhythm based platformer game.",
+        technologies: [SiPython, GiGuitarHead],
+        techNames: ["Python", "Pygame"],
+        techLinks: ["https://www.python.org/", "https://www.pygame.org/docs/"],
+        github: "https://github.com/y330/Pydash",
+        demo: "https://github.com/y330/Pydash",
+        images: ["/projects/pydash.png"],
+        available: true,
+    },
+    {
+        id: 5,
         name: "Coming Soon",
         description:
             "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",
@@ -115,7 +139,7 @@ export const projects = [
         techLinks: ["./"],
         github: "https://github.com/y330/",
         demo: "https://github.com/y330/",
-        image: "/projects/construction.webp",
+        images: [""],
         available: false,
     },
 ];

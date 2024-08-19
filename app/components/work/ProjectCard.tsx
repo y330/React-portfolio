@@ -8,6 +8,8 @@ import Container from "../container/Container";
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsLink45Deg } from "react-icons/bs";
+import Carousel from "../carousel/Carousel";
+
 const ProjectCard = ({
     id,
     name,
@@ -17,9 +19,10 @@ const ProjectCard = ({
     techLinks,
     github,
     demo,
-    image,
+    images,
     available,
 }: ProjectProps) => {
+    const blankSrc = "/projects/construction.png";
     return (
         <motion.div
             className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
@@ -37,16 +40,20 @@ const ProjectCard = ({
                 left="0px"
                 angle={0}
             >
-                <Image
-                    src={image}
-                    alt={name}
-                    width={500}
-                    height={500}
-                    className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[50%] lg:max-w-[55%] ${
-                        id % 2 === 0 ? "right-0" : "left-0"
-                    }`}
-                    priority={true}
-                />
+                {images.length >= 2 ? (
+                    <Carousel images={images} name={name} id={id} />
+                ) : (
+                    <Image
+                        src={images[0].length === 0 ? blankSrc : images[0]}
+                        alt={name}
+                        width={500}
+                        height={500}
+                        className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[50%] lg:max-w-[55%] ${
+                            id % 2 === 0 ? "-right-20" : "-left-20"
+                        }`}
+                        priority={true}
+                    />
+                )}
                 <div
                     className={`absolute top-0 text-[#0E1016] ${
                         id % 2 === 0
@@ -60,7 +67,7 @@ const ProjectCard = ({
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
-                                className="rounded-full w-[35px] bg-white py-5 px-2 lg:p-5 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="rounded-full w-[35px] bg-white py-5 px-2 md:p-5 lg:p-5 text-[20px] md:w-[65px] md:text-[28px] lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -73,7 +80,7 @@ const ProjectCard = ({
                                 href={demo}
                                 target="_blank"
                                 aria-label="Open Live Demo"
-                                className="w-[35px] rounded-full bg-white  py-5 px-2 lg:p-5 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="w-[35px] rounded-full bg-white  py-5 px-2 md:p-5 lg:p-5 text-[20px] md:w-[65px] md:text-[28px]  lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"

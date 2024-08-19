@@ -70,14 +70,7 @@
                 "ignoreProperties": true
             }
         ],
-        "@typescript-eslint/no-unused-vars": [
-            "warn",
-            {
-                "vars": "all",
-                "args": "none",
-                "ignoreResiblings": false
-            }
-        ],
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-empty-function": "off"
     },
     "overrides": [

@@ -50,7 +50,6 @@ const Skills = () => {
                                 <SiAdobephotoshop size={50} />
                                 <SiFigma size={50} />
                                 <SiGooglefonts size={50} />
-
                             </AnimatedTools>
                         </div>
                     </div>

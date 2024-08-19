@@ -31,10 +31,10 @@ const About = () => {
                             delay={0.2}
                             text="I am a second year Computer Science and Psychology student, currently working as Plant Genetics React Developer for Professor Nicholas Provart."
                         />
-                         <AnimatedBody
-                        delay={0.3}
-                        text="Formerly worked as a Coding Teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
-                    />
+                        <AnimatedBody
+                            delay={0.3}
+                            text="Formerly worked as a Coding Teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
+                        />
                     </div>
                 </div>
             </div>

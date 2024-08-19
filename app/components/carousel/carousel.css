@@ -1,0 +1,16 @@
+.CarouselButtonSvg {
+    -moz-transition: all 0.2s ease-in 0.1;
+    -o-transition: all 0.2s ease-in 0.1;
+    -webkit-transition: all 0.2s ease-in 0.1;
+    transition: color 200ms ease-in;
+    color: transparent;
+    background: transparent;
+}
+
+.Carousel:hover .CarouselButtonSvg {
+    color: white !important;
+}
+
+.active {
+    background-color: #ff33dd !important;
+}
