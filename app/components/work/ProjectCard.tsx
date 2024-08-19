@@ -48,7 +48,7 @@ const ProjectCard = ({
                         alt={name}
                         width={500}
                         height={500}
-                        className={`absolute -bottom-2 sm:w-[60%] sm:max-w-[100%] md:w-[50%] lg:max-w-[55%] ${
+                        className={`absolute -bottom-2 w-auto max-w-[100%] sm:w-[60%] sm:max-w-[100%] md:w-[50%] lg:max-w-[55%] ${
                             id % 2 === 0 ? "-right-20" : "-left-20"
                         }`}
                         priority={true}

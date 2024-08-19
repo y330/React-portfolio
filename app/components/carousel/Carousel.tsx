@@ -84,7 +84,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
     return (
         <div
             id={`Carousel${id}`}
-            className={`Carousel absolute -bottom-4 sm:w-[60%] md:w-[50%] lg:max-w-[55%] bottom-0 ${
+            className={`Carousel absolute sm:w-[60%] md:w-[50%] lg:max-w-[55%] bottom-0 ${
                 id % 2 === 0 ? "-right-24" : "-left-24"
             }`}
         >
@@ -137,7 +137,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 </div>
                 <div
                     id={`Carousel${id}Indicator`}
-                    className={`CarouselIndicator relative sm:left-[] bottom-8 flex justify-center gap-2`}
+                    className={`CarouselIndicator relative bottom-8 flex justify-center gap-2`}
                 >
                     {images.map((_, index) => (
                         <motion.div
