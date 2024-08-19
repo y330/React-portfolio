@@ -84,7 +84,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
     return (
         <div
             id={`Carousel${id}`}
-            className={`Carousel absolute sm:w-[60%] md:w-[50%] lg:max-w-[55%] bottom-0 ${
+            className={`Carousel absolute sm:w-[80%] md:w-[50%] lg:max-w-[55%] bottom-0 ${
                 id % 2 === 0 ? "-right-24" : "-left-24"
             }`}
         >
