@@ -109,7 +109,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                         id={`Carousel${id}LeftButton`}
                         className={`CarouselButton absolute ${
                             id % 2 === 0 ? "left-16" : "left-28"
-                        } top-[50%] rounded-full p-2 bg-black bg-opacity-40`}
+                        } top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handlePrevious}
@@ -123,8 +123,8 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                     <motion.div
                         id={`Carousel${id}RightButton`}
                         className={`CarouselButton absolute  ${
-                            id % 2 === 0 ? "right-28" : "right-18"
-                        }  top-[50%] rounded-full p-2 bg-black bg-opacity-40`}
+                            id % 2 === 0 ? "right-28" : "right-16"
+                        }  top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handleNext}
