@@ -23,6 +23,9 @@ dependencies:
   '@tailwindcss/line-clamp':
     specifier: ^0.4.2
     version: 0.4.4(tailwindcss@3.4.10)
+  blobity:
+    specifier: ^0.2.3
+    version: 0.2.3(react@18.3.1)
   framer-motion:
     specifier: ^10.6.1
     version: 10.18.0(react-dom@18.3.1)(react@18.3.1)
@@ -1034,6 +1037,17 @@ packages:
       buffer: 5.7.1
       inherits: 2.0.4
       readable-stream: 3.6.2
+    dev: false
+
+  /blobity@0.2.3(react@18.3.1):
+    resolution: {integrity: sha512-ooIyE44R+Gc+DbGCkMAcyAPln30nvQnZIsjmCDO9PUUoRkv2fNliHhsunL+GFp5JmAzbinO4iCeBwjjO6JeEcg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      vue: next
+    dependencies:
+      kinet: 2.2.1
+      lodash: 4.17.21
+      react: 18.3.1
     dev: false
 
   /brace-expansion@1.1.11:

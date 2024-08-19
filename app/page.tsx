@@ -4,7 +4,8 @@ import { ScrollerMotion } from "scroller-motion";
 import { useEventListener } from 'usehooks-ts';
 
 import PreLoader from "./components/other/PreLoader";
-import useBlobity from "./components/blobity/useBlobity";
+// import useBlobity from "./components/blobity/useBlobity";
+import useBlobity from 'blobity/lib/react/useBlobity';
 
 import Blur from "./components/overlay/Blur";
 import Color from "./components/overlay/Color";
@@ -33,25 +34,27 @@ export default function Home() {
         setIsMobile(window.innerWidth < 768);
     });
 
-    useBlobity(
+    const blobity = useBlobity(
         {
             licenseKey: "opensource",
-            focusableElementsOffsetX: 4,
-            focusableElementsOffsetY: 4,
-            color: "#ffffff",
-            dotColor: "#ffffff",
-            invert: true,
+            focusableElementsOffsetX: 5,
+            focusableElementsOffsetY: 5,
+            //color: '#666666',
+            color: '#66666640',
+            dotColor: '#ff33dd',
+            invert: false,
             focusableElements:
-                "[data-blobity], a:not([data-no-blobity]), h4:not([data-no-blobity]), li:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
+                '[data-blobity], a:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]',
             font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
-            fontSize: 16,
+            fontSize: 14,
             fontWeight: 900,
-            opacity: 1.0,
+            opacity: 0.3,
             fontColor: "#ffffff",
             zIndex: 35,
             size: 50,
             radius: 5,
             magnetic: false,
+
         }
     );
 
@@ -70,8 +73,8 @@ export default function Home() {
             >
                 <Hero />
                 <About />
-                {/* <Work /> */}
-                <Tools />
+                <Work />
+                {/* <Tools /> */}
                 { /* <Blog /> TODO: Low Priority */ }
                 <Contact />
                 <Footer />

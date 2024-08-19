@@ -1,6 +1,6 @@
 import { spaceGrotesk } from "../fonts/spaceGrotesk";
 import { motion } from "framer-motion";
-// import Name from "../components/svg/Name";
+import Name from "../components/svg/Name";
 import Logo from "../components/svg/Logo";
 import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
@@ -19,10 +19,10 @@ const Hero = () => {
                         width={100}
                         height={100}
                     />
-                    {/* <Name
+                    <Name
                         width={482}
                         height={283}
-                    /> */}
+                    />
                 </div>
             </div>
         </motion.section>

@@ -11,21 +11,20 @@ const syne = Syne({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.seekvisualartist.com/"),
-    title: "Seek Visual Artist",
-    description: "Hobby Designer and Software Engineer, currently at Neumann Kaffee Gruppe. Focused on immersive experiences, studying in Hamburg, Germany.",
+    title: "Yonah Aviv - Developer and Entrepreneur",
+    description: "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
     generator: "Next.js",
-    applicationName: "Seek Visual Artist",
+    applicationName: "Yonah Aviv",
     keywords: [
-        "Seek Visual Artist",
-        "SeekVA",
-        "Seek Design",
-        "Seek Visuals",
+        "Yonah Aviv",
+        "Yonah",
+        "Aviv",
         "freelance",
         "developer",
         "freelance developer",
         "frontend",
         "nextjs",
-        "astro",
+        "svelte",
         "react",
         "frontend developer",
         "frontend engineer",
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
         "creative developer",
         "creative engineer",
         "tech",
-        "germany",
+        "toronto",
         "software",
         "software developer",
         "portfolio",
@@ -45,18 +44,16 @@ export const metadata: Metadata = {
     ],
     colorScheme: "dark",
     openGraph: {
-        title: "Seek Visual Artist - Designer and Developer",
+        title: "Yonah Aviv - Developer and Entrepreneur",
         description: "React Developer and AI Enthusiast. Focused on developing sensational software, studying in Waterloo, Canada.",
-        url: "https://www.seekvisualartist.com/",
-        siteName: "www.seekvisualartist.com",
-        images: [
-            {
+        url: "https://yonah.vercel.app",
+        siteName: "YonahAviv",
+        images: [{
                 url: "./public/metadata.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Seek Visual Artist - Designer and Developer"
-            }
-        ],
+                alt: "Yonah Aviv - Developer and Entrepreneur"
+        }],
         locale: "en-US",
         type: "website"
     },
