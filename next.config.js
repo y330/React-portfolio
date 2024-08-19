@@ -19,6 +19,7 @@ const nextConfig = {
         buildActivityPosition: "top-right"
     },
     experimental: {
+        // @ts-expect-error weird
         legacyBrowsers: false,
         swcFileReading: true,
         appDir: true

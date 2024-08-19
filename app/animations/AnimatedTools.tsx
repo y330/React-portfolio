@@ -1,4 +1,4 @@
-import React, {cloneElement} from "react";
+import React, { cloneElement } from "react";
 import { IconType } from "react-icons";
 import Animated from "./Animated"; // Replace with the correct path to the "Animated" component
 

@@ -1,45 +1,47 @@
 {
-  "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "allowJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "incremental": true,
-    "isolatedModules": true,
-    "lib": [
-      "esnext"
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "isolatedModules": true,
+        "lib": [
+            "esnext",
+            "DOM",
+            "ES6"
+        ],
+        "module": "NodeNext",
+        "moduleDetection": "auto",
+        "moduleResolution": "nodenext",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "target": "esnext",
+        "types": [
+            "bun-types"
+        ],
+        "jsx": "preserve",
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ]
+    },
+    "include": [
+        ".next/types/**/*.ts",
+        "app/work-section/projectDetails.ts",
+        "next-env.d.ts",
+        "**/*.js",
+        "**/*.ts",
+        "**/*.tsx",
+        "main/types/**/*.ts",
+        "dev/types/**/*.ts",
+        "google.config.js",
+        "scripts/fetch-doc.js"
     ],
-    "module": "NodeNext",
-    "moduleDetection": "auto",
-    "moduleResolution": "nodenext",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "target": "esnext",
-    "types": [
-      "bun-types"
-    ],
-    "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
+    "exclude": [
+        "node_modules"
     ]
-  },
-  "include": [
-    ".next/types/**/*.ts",
-    "app/work-section/projectDetails.ts",
-    "next-env.d.ts",
-    "**/*.js",
-    "**/*.ts",
-    "**/*.tsx",
-    "main/types/**/*.ts",
-    "dev/types/**/*.ts",
-    "google.config.js",
-    "scripts/fetch-doc.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
 }

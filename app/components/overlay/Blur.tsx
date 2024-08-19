@@ -4,8 +4,11 @@ const Blur = () => {
     const [scrollOpacity, setScrollOpacity] = useState(1);
 
     const handleScroll = () => {
+        // @ts-expect-error dom
         const scrollY = window.scrollY;
+        // @ts-expect-error dom
         const windowHeight = window.innerHeight;
+        // @ts-expect-error dom
         const bodyHeight = document.body.clientHeight;
         const bottomThreshold = bodyHeight - windowHeight - 25;
 
@@ -14,14 +17,14 @@ const Blur = () => {
     };
 
     useEffect(() => {
-
         const handleScrollEvent = () => {
             handleScroll();
         };
-
+        // @ts-expect-error dom
         window.addEventListener("scroll", handleScrollEvent);
 
         return () => {
+            // @ts-expect-error dom
             window.removeEventListener("scroll", handleScrollEvent);
         };
     }, []);

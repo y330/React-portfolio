@@ -3,11 +3,11 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 type AnimatedTitleProps = {
-  text: string;
-  className: string;
-  wordSpace: string;
-  charSpace: string;
-  delay?: number;
+    text: string;
+    className: string;
+    wordSpace: string;
+    charSpace: string;
+    delay?: number;
 };
 
 export default function AnimatedTitle({

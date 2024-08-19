@@ -6,13 +6,14 @@ import { Syne } from "next/font/google";
 const syne = Syne({
     subsets: ["latin"],
     display: "block",
-    weight: ["400", "500", "600", "700", "800"]
+    weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.seekvisualartist.com/"),
     title: "Yonah Aviv - Software Developer",
-    description: "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
+    description:
+        "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
     generator: "Next.js",
     applicationName: "Yonah Aviv",
     keywords: [
@@ -40,45 +41,49 @@ export const metadata: Metadata = {
         "creative developer portfolio",
         "creative engineer portfolio",
         "software developer portfolio",
-        "frontend engineer portfolio"
+        "frontend engineer portfolio",
     ],
     colorScheme: "dark",
     openGraph: {
         title: "Yonah Aviv - Software Developer",
-        description: "React Developer and AI Enthusiast. Focused on developing sensational software, studying in Waterloo, Canada.",
+        description:
+            "React Developer and AI Enthusiast. Focused on developing sensational software, studying in Waterloo, Canada.",
         url: "https://yonah.vercel.app",
         siteName: "YonahAviv",
-        images: [{
+        images: [
+            {
                 url: "./public/metadata.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Yonah Aviv - Developer and Entrepreneur"
-        }],
+                alt: "Yonah Aviv - Developer and Entrepreneur",
+            },
+        ],
         locale: "en-US",
-        type: "website"
+        type: "website",
     },
     twitter: {
         card: "summary_large_image",
         title: "Yonah Aviv - Software Developer",
-        description: "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
+        description:
+            "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
         creator: "Yonah Aviv",
         creatorId: "0000000000",
-        images: ["./public/metadata.jpg"]
+        images: ["./public/metadata.jpg"],
     },
     robots: {
         index: true,
         follow: true,
         nocache: false,
         googleBot: {
-            "index": true,
-            "follow": false,
-            "noimageindex": true,
+            index: true,
+            follow: false,
+            noimageindex: true,
             "max-video-preview": -1,
             "max-image-preview": "large",
-            "max-snippet": -1
-        }
+            "max-snippet": -1,
+        },
     },
-    category: "technology"
+    category: "technology",
 };
 
 type RootLayoutProps = {
@@ -88,7 +93,11 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
-            <body className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}>{children}</body>
+            <body
+                className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+            >
+                {children}
+            </body>
         </html>
     );
 }

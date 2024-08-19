@@ -11,18 +11,15 @@ const Hero = () => {
             className="relative z-10 flex h-[100vh] w-full justify-center"
             id="home"
             initial="initial"
-            animate="animate">
+            animate="animate"
+        >
             <HeroBackground />
             <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
-                <div className={`relative flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}>
-                    <Logo
-                        width={100}
-                        height={100}
-                    />
-                    <Name
-                        width={482}
-                        height={283}
-                    />
+                <div
+                    className={`relative flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
+                >
+                    <Logo width={100} height={100} />
+                    <Name width={482} height={283} />
                 </div>
             </div>
         </motion.section>

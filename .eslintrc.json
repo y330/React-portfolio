@@ -75,7 +75,7 @@
             {
                 "vars": "all",
                 "args": "none",
-                "ignoreRestSiblings": false
+                "ignoreResiblings": false
             }
         ],
         "@typescript-eslint/no-empty-function": "off"

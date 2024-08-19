@@ -12,11 +12,14 @@ const NotFound = () => {
                 height={283}
                 className="w-[20%] sm:w-[20%] md:w-[20%] lg:w-[20%]"
             />
-            <p className="text-[25px] lowercase sm:text-[30px] md:text-[35px] lg:text-[40px]">Oh no! You seem to be wrong here.</p>
+            <p className="text-[25px] lowercase sm:text-[30px] md:text-[35px] lg:text-[40px]">
+                Oh no! You seem to be wrong here.
+            </p>
             <div>
                 <Link
                     href="/"
-                    className="text-[25px] lowercase sm:text-[30px] md:text-[35px] lg:text-[40px]">
+                    className="text-[25px] lowercase sm:text-[30px] md:text-[35px] lg:text-[40px]"
+                >
                     Go back
                 </Link>
             </div>

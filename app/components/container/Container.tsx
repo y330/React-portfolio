@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Grain from "../overlay/Grain";
 import "./container.css";
-import {useEventListener} from "usehooks-ts";
+import { useEventListener } from "usehooks-ts";
 
 type CustomCSSProperties = React.CSSProperties & {
     "--width"?: string | number;
@@ -72,16 +72,19 @@ const Container: React.FC<ContainerProps> = ({
     const containerRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-    useEventListener('mousemove', (e) => {
+    const onMouseMove = (e: Event) => {
+        // @ts-expect-error dom
         const rect = containerRef.current?.getBoundingClientRect();
         if (rect) {
             const { left: containerLeft, top: containerTop } = rect;
+            // @ts-expect-error dom
             const x = e.clientX - containerLeft;
+            // @ts-expect-error dom
             const y = e.clientY - containerTop;
             setCursorPosition({ x, y });
         }
-    });
+    };
+    useEventListener("mousemove", onMouseMove, containerRef);
 
     const getGradientStyle = () => {
         if (typeof angle === "number" && !isNaN(angle)) {
@@ -95,20 +98,24 @@ const Container: React.FC<ContainerProps> = ({
     return (
         <div
             className={`container ${blurClasses}`}
-            style={{
-                "--angle": typeof angle === "number" ? `${angle}deg` : angle,
-                "--width": typeof width === "number" ? `${width}px` : width,
-                "--height": typeof height === "number" ? `${height}px` : height,
-                "--gradient": getGradientStyle(),
-                "--spotlight-color": spotlightColor,
-                "--accent-color": accentColor,
-                "--border-radius": `${borderRadius}px`,
-                "--top": `${top}px`,
-                "--left": `${left}px`,
-                "--is-hovered": isHovered ? 0.5 : 0, // TODO: Clean this up later. Not Important right now.
-                "--cursor-x": `${cursorPosition.x}px`,
-                "--cursor-y": `${cursorPosition.y}px`,
-            } as unknown as CustomCSSProperties}
+            style={
+                {
+                    "--angle":
+                        typeof angle === "number" ? `${angle}deg` : angle,
+                    "--width": typeof width === "number" ? `${width}px` : width,
+                    "--height":
+                        typeof height === "number" ? `${height}px` : height,
+                    "--gradient": getGradientStyle(),
+                    "--spotlight-color": spotlightColor,
+                    "--accent-color": accentColor,
+                    "--border-radius": `${borderRadius}px`,
+                    "--top": `${top}px`,
+                    "--left": `${left}px`,
+                    "--is-hovered": isHovered ? 0.5 : 0, // TODO: Clean this up later. Not Important right now.
+                    "--cursor-x": `${cursorPosition.x}px`,
+                    "--cursor-y": `${cursorPosition.y}px`,
+                } as unknown as CustomCSSProperties
+            }
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onFocus={() => setIsHovered(true)}
@@ -121,7 +128,12 @@ const Container: React.FC<ContainerProps> = ({
             <div className="border" />
             <div className="border-highlight" />
             <div className="grain">
-                <Grain baseFrequency={baseFrequency} numOctaves={numOctaves} w={width} h={height}/>
+                <Grain
+                    baseFrequency={baseFrequency}
+                    numOctaves={numOctaves}
+                    w={width}
+                    h={height}
+                />
             </div>
         </div>
     );
