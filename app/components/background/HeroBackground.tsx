@@ -7,8 +7,8 @@ const HeroBackground: React.FC = () => {
                 className="h-full w-full object-cover"
                 autoPlay={true}
                 playsInline={true}
-                loop
-                muted
+                loop={true}
+                muted={true}
                 preload="auto"
             >
                 <source src="/hero.webm" type="video/webm" />
