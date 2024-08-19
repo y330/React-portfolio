@@ -25,7 +25,7 @@ const ProjectCard = ({
     const blankSrc = "/projects/construction.png";
     return (
         <motion.div
-            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[750px] w-full items-stretch justify-center py-0 sm:h-[900px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
             initial="initial"
             animate="animate"
         >
@@ -48,7 +48,7 @@ const ProjectCard = ({
                         alt={name}
                         width={500}
                         height={500}
-                        className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[50%] lg:max-w-[55%] ${
+                        className={`absolute -bottom-2 sm:w-[60%] sm:max-w-[100%] md:w-[50%] lg:max-w-[55%] ${
                             id % 2 === 0 ? "-right-20" : "-left-20"
                         }`}
                         priority={true}
