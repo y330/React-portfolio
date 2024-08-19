@@ -70,6 +70,41 @@ export const projects = [
         image: "/projects/eplant.png",
         available: true,
     },
+    // {
+    //     id: 2,
+    //     name: "ePlant",
+    //     description:
+    //         "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, using the BAR api",
+    //     technologies: [SiTypescript, SiReact, SiCytoscapedotjs],
+    //     techNames: ["TypeScript", "React", "Cytoscape"],
+    //     techLinks: [
+    //         "https://www.typescriptlang.org",
+    //         "https://reactjs.org",
+    //         "https://cytoscape.org/",
+    //     ],
+    //     github: "https://github.com/BioAnalyticResource/ePlant",
+    //     demo: "https://bioanalyticresource.github.io/ePlant/",
+    //     image: "/projects/eplant.png",
+    //     available: true,
+    // },
+    // {
+    //     id: 3,
+    //     name: "ePlant",
+    //     description:
+    //         "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, using the BAR api",
+    //     technologies: [SiTypescript, SiReact, SiCytoscapedotjs],
+    //     techNames: ["TypeScript", "React", "Cytoscape"],
+    //     techLinks: [
+    //         "https://www.typescriptlang.org",
+    //         "https://reactjs.org",
+    //         "https://cytoscape.org/",
+    //     ],
+    //     github: "https://github.com/BioAnalyticResource/ePlant",
+    //     demo: "https://bioanalyticresource.github.io/ePlant/",
+    //     image: "/projects/eplant.png",
+    //     available: true,
+    // },
+
     {
         id: 2,
         name: "Coming Soon",

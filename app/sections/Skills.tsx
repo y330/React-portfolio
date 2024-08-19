@@ -4,21 +4,21 @@ import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import {
     SiFigma,
-    SiFreecad,
     SiGooglefonts,
     SiAdobephotoshop,
     SiGit,
     SiGithub,
-    VscVscode,
     SiJavascript,
     SiPython,
     SiTypescript,
     SiReact,
     SiSvelte,
-    SiJava,
     SiNextdotjs,
     SiFlask,
+    SiTailwindcss,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { FaJava } from "react-icons/fa";
 import AnimatedTools from "../animations/AnimatedTools.tsx";
 
 const Skills = () => {
@@ -50,7 +50,7 @@ const Skills = () => {
                                 <SiAdobephotoshop size={50} />
                                 <SiFigma size={50} />
                                 <SiGooglefonts size={50} />
-                                <SiFreecad size={50} />
+
                             </AnimatedTools>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const Skills = () => {
                                 <SiJavascript size={50} />
                                 <SiReact size={50} />
                                 <SiSvelte size={50} />
-                                <SiNextdotjs size={50} />
+                                <SiTailwindcss size={50} />
                             </AnimatedTools>
                         </div>
                     </div>
@@ -82,7 +82,8 @@ const Skills = () => {
                             >
                                 <SiFlask size={50} />
                                 <SiPython size={50} />
-                                <SiJava size={50} />
+                                <SiNextdotjs size={50} />
+                                <FaJava size={50} />
                             </AnimatedTools>
                         </div>
                     </div>

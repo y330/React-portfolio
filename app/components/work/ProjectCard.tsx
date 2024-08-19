@@ -60,7 +60,7 @@ const ProjectCard = ({
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
-                                className="rounded-full w-[35px] bg-white md:py-5 md:px-2 sm:py-5 sm:px-2 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="rounded-full w-[35px] bg-white py-5 px-2 lg:p-5 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -73,7 +73,7 @@ const ProjectCard = ({
                                 href={demo}
                                 target="_blank"
                                 aria-label="Open Live Demo"
-                                className="w-[35px] rounded-full bg-white  md:py-5 md:px-2 sm:py-5 sm:px-2 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="w-[35px] rounded-full bg-white  py-5 px-2 lg:p-5 text-[20px] md:w-[35px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
