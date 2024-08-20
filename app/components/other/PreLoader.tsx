@@ -91,7 +91,7 @@ const PreLoader: React.FC = () => {
             }}
         >
             <div
-                className={`relative flex flex-col items-center justify-center pointer-events-none`}
+                className={`texts-container relative flex flex-col items-center justify-center pointer-events-none`}
             >
                 <Logo width={30} height={30} />
             </div>
