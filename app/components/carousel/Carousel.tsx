@@ -86,7 +86,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
             id={`Carousel${id}`}
             className={`Carousel absolute ${
                 id % 2 === 0 ? "md:right-2 lg:right-2" : "md:left-2 lg:left-2"
-            } sm:w-[100%] md:w-[50%] lg:max-w-[55%] bottom-0`}
+            } sm:w-[100%] md:w-[50%] lg:max-w-[55%] -bottom-4`}
         >
             <AnimatePresence mode="popLayout">
                 <motion.img
@@ -133,7 +133,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 </div>
                 <div
                     id={`Carousel${id}Indicator`}
-                    className={`CarouselIndicator relative bottom-8 flex justify-center gap-2`}
+                    className={`CarouselIndicator relative bottom-14 flex justify-center gap-2`}
                 >
                     {images.map((_, index) => (
                         <motion.div
