@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import Logo from "../svg/Logo";
 
 const PreLoader: React.FC = () => {
     useEffect(() => {
@@ -90,6 +91,11 @@ const PreLoader: React.FC = () => {
             }}
         >
             <div
+                className={`relative flex flex-col items-center justify-center pointer-events-none`}
+            >
+                <Logo width={30} height={30} />
+            </div>
+            <div
                 className="texts-container w-500 flex h-60 items-center justify-center gap-[5px] overflow-hidden text-[14px] font-bold text-[#e4ded7] opacity-0 sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
                 style={{
                     height: "60px",
@@ -98,6 +104,7 @@ const PreLoader: React.FC = () => {
                 <span>Developer</span>
                 <span> / </span>
                 <span>Designer</span>
+
                 <div className="sub hidden"></div>
             </div>
         </div>

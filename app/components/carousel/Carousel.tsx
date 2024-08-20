@@ -54,7 +54,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
         },
         animate: {
             scale: 1.3,
-            transition: { type: "spring", stiffness: 1000, damping: "10" },
+            transition: { type: "tween", stiffness: 200, damping: "6" },
         },
         hover: {
             scale: 1.1,
@@ -84,9 +84,9 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
     return (
         <div
             id={`Carousel${id}`}
-            className={`Carousel absolute sm:w-[80%] md:w-[50%] lg:max-w-[55%] bottom-0 ${
-                id % 2 === 0 ? "-right-24" : "-left-24"
-            }`}
+            className={`Carousel absolute ${
+                id % 2 === 0 ? "md:right-2 lg:right-2" : "md:left-2 lg:left-2"
+            } sm:w-[100%] md:w-[50%] lg:max-w-[55%] bottom-0`}
         >
             <AnimatePresence mode="popLayout">
                 <motion.img
@@ -107,9 +107,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 >
                     <motion.div
                         id={`Carousel${id}LeftButton`}
-                        className={`CarouselButton absolute ${
-                            id % 2 === 0 ? "left-16" : "left-28"
-                        } top-[50%] rounded-full p-2`}
+                        className={`CarouselButton absolute left-16 top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handlePrevious}
@@ -122,9 +120,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
 
                     <motion.div
                         id={`Carousel${id}RightButton`}
-                        className={`CarouselButton absolute  ${
-                            id % 2 === 0 ? "right-28" : "right-16"
-                        }  top-[50%] rounded-full p-2`}
+                        className={`CarouselButton absolute right-16 top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handleNext}
