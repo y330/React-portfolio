@@ -47,9 +47,9 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiAdobephotoshop size={50} />
-                                <SiFigma size={50} />
-                                <SiGooglefonts size={50} />
+                                <SiAdobephotoshop size={50} title="Photoshop">#2fa0f4</SiAdobephotoshop>
+                                <SiFigma size={50} title="Figma">#e93600</SiFigma>
+                                <SiGooglefonts size={50} title="Google Fonts"></SiGooglefonts>
                             </AnimatedTools>
                         </div>
                     </div>
@@ -62,11 +62,11 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiTypescript size={50} />
-                                <SiJavascript size={50} />
-                                <SiReact size={50} />
-                                <SiSvelte size={50} />
-                                <SiTailwindcss size={50} />
+                                <SiTypescript size={50} title="TypeScript">#0079cc</SiTypescript>
+                                <SiJavascript size={50} title="JavaScript">#f5dd1b</SiJavascript>
+                                <SiReact size={50} title="React">#02d2fa</SiReact>
+                                <SiSvelte size={50} title="Svelte">#fc3f00</SiSvelte>
+                                <SiTailwindcss size={50} title="Tailwind CSS">#06b6d4</SiTailwindcss>
                             </AnimatedTools>
                         </div>
                     </div>
@@ -79,10 +79,10 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiFlask size={50} color={"#00f14c"} />
-                                <SiPython size={50} color={"#386b9b"} />
-                                <SiNextdotjs size={50} />
-                                <FaJava size={50} />
+                                <SiFlask size={50} title="Flask">#00f14c</SiFlask>
+                                <SiPython size={50} title="Python">#018297</SiPython>
+                                <SiNextdotjs size={50} title="Next.js">#6374e8</SiNextdotjs>
+                                <FaJava size={50} title="Java">#f98500</FaJava>
                             </AnimatedTools>
                         </div>
                     </div>
@@ -95,9 +95,9 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiGithub size={50} />
-                                <SiGit size={50} />
-                                <VscVscode size={50} />
+                                <SiGithub size={50} title="GitHub"/>
+                                <SiGit size={50} title="Git">#e84d30</SiGit>
+                                <VscVscode size={50} title="VSCode">#279ded</VscVscode>
                             </AnimatedTools>
                         </div>
                     </div>

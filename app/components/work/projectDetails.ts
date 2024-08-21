@@ -16,7 +16,6 @@ import {
 import { GiGuitarHead } from "react-icons/gi";
 
 import { IconType } from "react-icons";
-
 export type ProjectProps = {
     id: number;
     name: string;

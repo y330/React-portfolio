@@ -107,7 +107,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 >
                     <motion.div
                         id={`Carousel${id}LeftButton`}
-                        className={`CarouselButton absolute left-16 top-[50%] rounded-full p-2`}
+                        className={`CarouselButton absolute left-16 sm:left-8 md:left-12 lg:left-16 top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handlePrevious}
@@ -120,7 +120,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
 
                     <motion.div
                         id={`Carousel${id}RightButton`}
-                        className={`CarouselButton absolute right-16 top-[50%] rounded-full p-2`}
+                        className={`CarouselButton absolute right-16 sm:right-8 md:right-12 lg:right-16 top-[50%] rounded-full p-2`}
                         variants={slidersVariants}
                         whileHover="hover"
                         onClick={handleNext}
@@ -133,12 +133,12 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 </div>
                 <div
                     id={`Carousel${id}Indicator`}
-                    className={`CarouselIndicator relative bottom-12 flex justify-center gap-2`}
+                    className={`CarouselIndicator relative bottom-8 flex justify-center gap-2`}
                 >
                     {images.map((_, index) => (
                         <motion.div
                             key={index}
-                            className={`CarouselDot bg-[#333] border-2 border-[#ff33dd] rounded-full w-[20px] h-[20px] ${
+                            className={`CarouselDot bg-[#333] border-2 border-[#ff33dd] rounded-full w-[20px] h-[20px] sm:w-[10px] sm:h-[10px] md:w-[20px] md:h-[20px] lg:w-[20px] lg:h-[20px] ${
                                 currentIndex === index ? "active" : ""
                             }`}
                             initial="initial"
