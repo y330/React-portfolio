@@ -133,7 +133,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                 </div>
                 <div
                     id={`Carousel${id}Indicator`}
-                    className={`CarouselIndicator relative bottom-14 flex justify-center gap-2`}
+                    className={`CarouselIndicator relative bottom-12 flex justify-center gap-2`}
                 >
                     {images.map((_, index) => (
                         <motion.div
