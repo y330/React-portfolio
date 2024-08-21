@@ -79,8 +79,8 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiFlask size={50} />
-                                <SiPython size={50} />
+                                <SiFlask size={50} color={"#00f14c"} />
+                                <SiPython size={50} color={"#386b9b"} />
                                 <SiNextdotjs size={50} />
                                 <FaJava size={50} />
                             </AnimatedTools>

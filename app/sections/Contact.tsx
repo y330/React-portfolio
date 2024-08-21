@@ -40,7 +40,7 @@ const Contact = () => {
                             }
                         />
                         <Link
-                            href="mailto:avivyonah@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Lets%20work%20together!&to=avivyonah@gmail.com&body=Hello%20Yonah%2C%20I%20think%20we%20need%20you%20to%20work%20on%20this%20particular%20project..."
                             target="_blank"
                             aria-label="Send me an email"
                             className="mt-1 w-[147px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[147px] md:mt-3 md:w-[170px] lg:mt-4"
