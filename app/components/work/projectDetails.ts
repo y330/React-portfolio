@@ -100,9 +100,9 @@ export const projects = [
 
     {
         id: 3,
-        name: "FragQR",
+        name: "FragmentQR",
         description:
-            "FragmentQR - Browser extension for creating QR codes to text highlights",
+            "Browser extension for creating QR codes to text highlights",
         technologies: [SiJavascript, SiGooglechrome],
         techNames: ["JavaScript", "Chrome APIs"],
         techLinks: [
