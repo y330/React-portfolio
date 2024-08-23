@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import AnimatedDiv from "../../animations/AnimatedDiv"; // Replace with the correct path to the "Animated" component
 import { projects, ProjectProps } from "./projectDetails";
 import React from "react";
+import AnimatedBody from "../../animations/AnimatedBody";
 
 const ProjectGrid = () => {
     return (
@@ -10,7 +11,10 @@ const ProjectGrid = () => {
                 <h4
                     className={`text-[16px] md:text-[20px] lg:text-[34px] ${"text-[#e4ded7]"}`}
                 >
-                    Check out some of my recent projects!
+                    <AnimatedBody
+                        delay={0.1}
+                        text="Check out some of my recent projects!"
+                    />
                 </h4>
             </div>
 
