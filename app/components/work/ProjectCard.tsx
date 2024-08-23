@@ -49,7 +49,7 @@ const ProjectCard = ({
                         width={500}
                         height={500}
                         className={`absolute ${id % 2 === 0 ? "md:right-2 lg:right-2" : "md:left-2 lg:left-2"
-                            } sm:w-[100%] md:w-[50%] lg:max-w-[55%] -bottom-4`}
+                        } sm:w-[100%] md:w-[50%] lg:max-w-[55%] -bottom-4`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 1.2 }}
                     />
@@ -58,7 +58,7 @@ const ProjectCard = ({
                     className={`absolute top-0 text-[#0E1016] ${id % 2 === 0
                         ? "left-0 ml-8 lg:ml-14"
                         : "right-0 mr-8 lg:mr-14"
-                        } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
+                    } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
                 >
                     {available ? (
                         <>
@@ -97,7 +97,7 @@ const ProjectCard = ({
                     className={`absolute text-white  ${!(id % 2 === 0)
                         ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-12 md:mr-0 lg:right-0 lg:top-52  lg:mr-4"
                         : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
-                        } mb-10  md:mb-16 lg:mb-14 `}
+                    } mb-10  md:mb-16 lg:mb-14 `}
                 >
                     <AnimatedTitle
                         text={name}
