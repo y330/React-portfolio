@@ -43,15 +43,16 @@ const ProjectCard = ({
                 {images.length >= 2 ? (
                     <Carousel images={images} name={name} id={id} />
                 ) : (
-                    <Image
+                    <motion.img
                         src={images[0].length === 0 ? blankSrc : images[0]}
                         alt={name}
                         width={500}
                         height={500}
-                        className={`absolute bottom-0 w-auto sm:w-[100%] md:w-[50%] lg:max-w-[55%] ${
-                            id % 2 === 0 ? "-right-20" : "-left-20"
-                        }`}
-                        priority={true}
+                        className={`absolute ${
+                            id % 2 === 0 ? "md:right-2 lg:right-2" : "md:left-2 lg:left-2"
+                        } sm:w-[100%] md:w-[50%] lg:max-w-[55%] -bottom-4`}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1.2 }}
                     />
                 )}
                 <div
@@ -97,7 +98,7 @@ const ProjectCard = ({
                 <div
                     className={`absolute text-white  ${
                         !(id % 2 === 0)
-                            ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
+                            ? "right-0 top-32 mr-0 md:right-0 md:ml-12 md:mr-0 lg:right-0 lg:top-52  lg:mr-4"
                             : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
                     } mb-10  md:mb-16 lg:mb-14 `}
                 >
