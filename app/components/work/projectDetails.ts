@@ -84,14 +84,13 @@ export const projects = [
         id: 2,
         name: "QuickSum",
         description: "Aesthetic essay summarizer.",
-        technologies: [SiSvelte, SiTypescript, SiSass, SiWebpack, SiPostcss],
-        techNames: ["Svelte", "TypeScript", "SASS", "Webpack", "PostCSS"],
+        technologies: [SiSvelte, SiTypescript, SiSass, SiWebpack],
+        techNames: ["Svelte", "TypeScript", "SASS", "Webpack"],
         techLinks: [
             "https://svelte.dev/",
             "https://www.typescriptlang.org",
             "https://sass-lang.com/",
             "https://webpack.js.org/",
-            "https://postcss.org/",
         ],
         github: "https://github.com/y330/quicksum",
         demo: "https://quicksum.vercel.app/",
@@ -101,9 +100,9 @@ export const projects = [
 
     {
         id: 3,
-        name: "FragmentQR",
+        name: "FragQR",
         description:
-            "Browser extension for creating QR codes to text highlights",
+            "FragmentQR - Browser extension for creating QR codes to text highlights",
         technologies: [SiJavascript, SiGooglechrome],
         techNames: ["JavaScript", "Chrome APIs"],
         techLinks: [
