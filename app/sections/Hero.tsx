@@ -16,10 +16,26 @@ const Hero = () => {
             <HeroBackground />
             <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
                 <div
-                    className={`relative flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
+                    className={`relative mb-14 flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
                 >
+       
                     <Logo width={100} height={100} />
-                    <Name width={482} height={283} />
+                    {/* <motion.div
+                        key={1}
+                        initial={{
+                            opacity: 0,
+                            scale: 2,
+                            // x:  project.props["id"] % 2 == 0 ? 100 : -100 ,
+                            y: 200
+                        }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1}}
+                        transition={{
+                            delay: 0.5,
+                            ease: "easeIn"
+                        }}
+                    > */}
+                    <Name width={200} height={100} />
+                    {/* </motion.div> */}
                 </div>
             </div>
         </motion.section>
