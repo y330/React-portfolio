@@ -52,7 +52,7 @@ const Contact = () => {
                         </Link>
                     </div>
 
-                    <div className="flex flex-wrap gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
+                    <div className="flex sm:flex-wrap gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-10 lg:text-[28px]">
                         <Link
                             href="https://github.com/y330"
                             target="_blank"

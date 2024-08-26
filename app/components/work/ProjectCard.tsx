@@ -102,7 +102,7 @@ const ProjectCard = ({
                     <AnimatedTitle
                         text={name}
                         className={
-                            "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
+                            "max-w-[100%] text-[40px] leading-none text-white md:max-w-[350px] md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
                         }
                         wordSpace={"mr-[0.25em]"}
                         charSpace={"-mr-[0.01em]"}
