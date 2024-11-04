@@ -1,9 +1,8 @@
 import { spaceGrotesk } from "../fonts/spaceGrotesk";
 import { motion } from "framer-motion";
-import Name from "../components/svg/Name";
-import Logo from "../components/svg/Logo";
 import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
+import Portrait from "../components/svg/Portrait";
 
 const Hero = () => {
     return (
@@ -19,7 +18,7 @@ const Hero = () => {
                     className={`relative mb-14 flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
                 >
                     {/* TODO: add Flip animation that flips to a pciture of me */}
-                    <Logo width={100} height={100} />
+                    <Portrait width={200} height={200} />
                 </div>
             </div>
         </motion.section>

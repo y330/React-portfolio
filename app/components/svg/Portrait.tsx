@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
 
-interface LogoProps {
+interface PortraitProps {
     width?: number;
     height?: number;
 }
 
-const Logo: React.FC<LogoProps> = ({ width = 100, height = 100 }) => {
+const Portrait: React.FC<PortraitProps> = ({ width = 100, height = 100 }) => {
     return (
         <Image
             className={`w-${width} h-${height}`}
-            src="/name.svg"
-            alt="Name"
+            src="/suit_flick.png"
+            alt="Portrait"
             width={width}
             height={height}
         />
     );
 };
 
-export default Logo;
+export default Portrait;

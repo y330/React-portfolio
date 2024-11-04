@@ -100,7 +100,6 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                     }
                     animate="visible"
                     whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 1.2 }}
                     exit="exit"
                 />
                 <div

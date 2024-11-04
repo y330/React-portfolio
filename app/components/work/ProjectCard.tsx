@@ -51,7 +51,6 @@ const ProjectCard = ({
                         className={`absolute ${id % 2 === 0 ? "md:right-2 lg:right-2" : "md:left-2 lg:left-2"
                         } sm:w-[100%] md:w-[50%] lg:max-w-[55%] -bottom-4`}
                         whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 1.2 }}
                     />
                 )}
                 <div
