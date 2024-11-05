@@ -64,10 +64,11 @@ const Animated: React.FC<AnimatedProps> = ({
                 return (
                     <motion.div
                         key={index}
-                        whileHover={{ scale: 1.1, color: icon.props["children"], opacity: 1 }} // Modify the color when hovering
-                        whileTap={{ scale: 0.9, color: icon.props["children"], opacity: 1 }}
-                        style={{ width: iconSize, height: iconSize, opacity: 0.3, color: icon.props["children"] }}
+                        whileHover={{ scale: 1.1, opacity: 1 }} // Modify the color when hovering
+                        whileTap={{ scale: 0.9, opacity: 1 }}
+                        style={{ width: iconSize, height: iconSize, opacity: 0.6 }}
                         data-blobity
+                        data-blobity-tooltip={icon.props["children"]}
                         data-blobity-radius={15}
                         data-blobity-offset-x={15}
                         data-blobity-offset-y={15}

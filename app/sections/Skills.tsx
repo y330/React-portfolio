@@ -47,11 +47,12 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiAdobephotoshop size={50} title="Photoshop">#2fa0f4</SiAdobephotoshop>
-                                <SiFigma size={50} title="Figma">#e93600</SiFigma>
-                                <SiGooglefonts size={50} title="Google Fonts"></SiGooglefonts>
+                                <SiAdobephotoshop size={50} color="#2fa0f4">Photoshop</SiAdobephotoshop>
+                                <SiFigma size={50} color="#e93600">Figma</SiFigma>
+                                <SiGooglefonts size={50} color="white">Google Fonts</SiGooglefonts>
                             </AnimatedTools>
                         </div>
+                       
                     </div>
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
                         <AnimatedBody delay={0.2} text="Frontend" />
@@ -62,11 +63,11 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiTypescript size={50} title="TypeScript">#0079cc</SiTypescript>
-                                <SiJavascript size={50} title="JavaScript">#f5dd1b</SiJavascript>
-                                <SiReact size={50} title="React">#02d2fa</SiReact>
-                                <SiSvelte size={50} title="Svelte">#fc3f00</SiSvelte>
-                                <SiTailwindcss size={50} title="Tailwind CSS">#06b6d4</SiTailwindcss>
+                                <SiTypescript size={50} color="#0079cc">TypeScript</SiTypescript>
+                                <SiJavascript size={50} color="#f5dd1b">JavaScript</SiJavascript>
+                                <SiReact size={50} color="#02d2fa">React</SiReact>
+                                <SiSvelte size={50} color="#fc3f00">Svelte</SiSvelte>
+                                <SiTailwindcss size={50} color="#06b6d4">Tailwind CSS</SiTailwindcss>
                             </AnimatedTools>
                         </div>
                     </div>
@@ -79,10 +80,10 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiFlask size={50} title="Flask">#00f14c</SiFlask>
-                                <SiPython size={50} title="Python">#018297</SiPython>
-                                <SiNextdotjs size={50} title="Next.js">#6374e8</SiNextdotjs>
-                                <FaJava size={50} title="Java">#f98500</FaJava>
+                                <SiFlask size={50} color="#00f14c">Flask</SiFlask>
+                                <SiPython size={50} color="#018297">Python</SiPython>
+                                <SiNextdotjs size={50} color="#6374e8">Next.js</SiNextdotjs>
+                                <FaJava size={50} color="#6374e8">Java</FaJava>
                             </AnimatedTools>
                         </div>
                     </div>
@@ -95,9 +96,9 @@ const Skills = () => {
                                 stepSize={0.1}
                                 iconSize={50}
                             >
-                                <SiGithub size={50} title="GitHub"/>
-                                <SiGit size={50} title="Git">#e84d30</SiGit>
-                                <VscVscode size={50} title="VSCode">#279ded</VscVscode>
+                                <SiGithub size={50} color="white">GitHub</SiGithub>
+                                <SiGit size={50} color="#e84d30">Git</SiGit>
+                                <VscVscode size={50} color="#279ded">VSCode</VscVscode>
                             </AnimatedTools>
                         </div>
                     </div>

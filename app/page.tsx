@@ -45,8 +45,7 @@ export default function Home() {
         licenseKey: "opensource",
         focusableElementsOffsetX: 5,
         focusableElementsOffsetY: 5,
-        //color: '#666666',
-        color: "#66666640",
+        color: '#666666',
         dotColor: "#ff33dd",
         invert: false,
         focusableElements:
@@ -54,7 +53,7 @@ export default function Home() {
         font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
         fontSize: 14,
         fontWeight: 900,
-        opacity: 0.3,
+        opacity: 0.4,
         fontColor: "#ffffff",
         zIndex: 35,
         size: 50,

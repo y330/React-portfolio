@@ -10,7 +10,7 @@ const About = () => {
             id="about"
         >
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
-   
+
                 <AnimatedTitle
                     text={"DEVELOPING SENSATIONAL SOFTWARE SINCE 2018."}
                     className={
@@ -27,7 +27,7 @@ const About = () => {
 
                         <AnimatedBody
                             delay={0.1}
-                            text="Whether designing a sophisticated user interface or developing a complex application, I consistently strive to unique and innovative solutions. "
+                            text="Whether designing a sophisticated user interface or developing a complex application, I consistently strive to create unique and innovative solutions. "
                         />
                         <AnimatedBody
                             delay={0.2}
@@ -35,10 +35,6 @@ const About = () => {
                         />
                         <AnimatedBody
                             delay={0.3}
-                            text="Formerly worked as a coding teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
-                        />
-                        <AnimatedBody
-                            delay={0.4}
                             text="Presently a second-year student pursuing a dual degree in Computer Science and Psychology. "
                         />
                     </div>
