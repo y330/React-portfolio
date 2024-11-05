@@ -27,15 +27,19 @@ const About = () => {
 
                         <AnimatedBody
                             delay={0.1}
-                            text="Whether I’m designing a sleek user interface or coding a complex application, I’m always striving to create something unique and innovative. "
+                            text="Whether designing a sophisticated user interface or developing a complex application, I consistently strive to unique and innovative solutions. "
                         />
                         <AnimatedBody
                             delay={0.2}
-                            text="I am a second year Computer Science and Psychology student, currently working as Plant Genetics React Developer for Professor Nicholas Provart."
+                            text="Currently working as a contract React developer in the Cell & Systems Biology Department at University of Toronto."
                         />
                         <AnimatedBody
                             delay={0.3}
-                            text="Formerly worked as a Coding Teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
+                            text="Formerly worked as a coding teacher via co-op placement: taught 20+ middle school students how to code in Python and JavaScript."
+                        />
+                        <AnimatedBody
+                            delay={0.4}
+                            text="Presently a second-year student pursuing a dual degree in Computer Science and Psychology. "
                         />
                     </div>
                 </div>

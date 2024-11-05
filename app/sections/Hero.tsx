@@ -15,7 +15,7 @@ const Hero = () => {
             <HeroBackground />
             <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
                 <div
-                    className={`relative mb-14 flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
+                    className={`relative mb-4 sm:mb-14 md:mb-4 lg:mb-2 xl:mb-0 flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
                 >
                     {/* TODO: add Flip animation that flips to a pciture of me */}
                     <Portrait width={400} height={400} />
