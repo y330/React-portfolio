@@ -30,40 +30,6 @@ export type ProjectProps = {
 };
 export const projects = [
     {
-        id: 0,
-        name: "Portfolio 2025",
-        description: "This is the third major redevelopment of my portfolio",
-        technologies: [
-            SiTypescript,
-            SiReact,
-            SiNextdotjs,
-            SiTailwindcss,
-            SiFramer,
-        ],
-        techNames: [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "TailwindCSS",
-            "Framer Motion",
-        ],
-        techLinks: [
-            "https://www.typescriptlang.org",
-            "https://reactjs.org",
-            "https://nextjs.org",
-            "https://tailwindcss.com",
-            "https://www.framer.com/motion/",
-        ],
-        github: "https:github/coming-soon",
-        demo: "https://yonah.vercel.app",
-        images: [
-            "/projects/portfolio_1.png",
-            "/projects/portfolio_2.png",
-            "/projects/portfolio_3.png",
-        ],
-        available: true,
-    },
-    {
         id: 1,
         name: "ePlant",
         description:
