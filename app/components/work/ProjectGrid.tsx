@@ -6,7 +6,7 @@ import React from "react";
 const ProjectGrid = () => {
     return (
         <>
-            <AnimatedDiv className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1" delay={0.1}>
+            <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1" >
                 {projects.map((project: ProjectProps) => (
                     <ProjectCard
                         id={project.id}
@@ -22,7 +22,7 @@ const ProjectGrid = () => {
                         available={project.available}
                     />
                 ))}
-            </AnimatedDiv>
+            </div>
         </>
     );
 };

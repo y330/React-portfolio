@@ -96,9 +96,9 @@ const PreLoader: React.FC = () => {
                     height: "60px",
                 }}
             >
-                <span>Developer</span>
+                <span>Software Developer</span>
                 <span> / </span>
-                <span>Designer</span>
+                <span>Musician</span>
 
                 <div className="sub hidden"></div>
             </div>

@@ -17,7 +17,7 @@ const Footer = () => {
                 />
                 <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
                     <AnimatedBody
-                        text={"Design & Deployed by"}
+                        text={"Designed by"}
                         className={"m-0 p-0"}
                     />
                     <Link

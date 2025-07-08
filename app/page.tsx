@@ -41,25 +41,25 @@ export default function Home() {
         windowRef
     );
 
-    const blobity = useBlobity({
-        licenseKey: "opensource",
-        focusableElementsOffsetX: 5,
-        focusableElementsOffsetY: 5,
-        color: '#666666',
-        dotColor: "#ff33dd",
-        invert: false,
-        focusableElements:
-            "[data-blobity], a:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
-        font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
-        fontSize: 14,
-        fontWeight: 900,
-        opacity: 0.4,
-        fontColor: "#ffffff",
-        zIndex: 35,
-        size: 50,
-        radius: 5,
-        magnetic: false,
-    });
+    // const blobity = useBlobity({
+    //     licenseKey: "opensource",
+    //     focusableElementsOffsetX: 5,
+    //     focusableElementsOffsetY: 5,
+    //     color: '#666666',
+    //     dotColor: "#ff33dd",
+    //     invert: false,
+    //     focusableElements:
+    //         "[data-blobity], a:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
+    //     font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
+    //     fontSize: 14,
+    //     fontWeight: 900,
+    //     opacity: 0.4,
+    //     fontColor: "#ffffff",
+    //     zIndex: 35,
+    //     size: 50,
+    //     radius: 5,
+    //     magnetic: false,
+    // });
 
     return (
         <>
@@ -79,7 +79,7 @@ export default function Home() {
                     <Hero />
                     <About />
                     <Work />
-                    <Skills />
+                    {/* <Skills /> */}
                     {/* <Blog /> TODO: Low Priority */}
                     <Contact />
                     <Footer />

@@ -10,10 +10,10 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://www.seekvisualartist.com/"),
+    metadataBase: new URL("https://yonah.vercel.app/"),
     title: "Yonah Aviv - Software Developer",
     description:
-        "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
+        "Software Developer. Passionate about making an impact through technology.",
     generator: "Next.js",
     applicationName: "Yonah Aviv",
     keywords: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Yonah Aviv - Software Developer",
         description:
-            "React Developer and AI Enthusiast. Focused on developing sensational software, studying in Waterloo, Canada.",
+            "Software Developer. Passionate about making an impact through technology.",
         url: "https://yonah.vercel.app",
         siteName: "YonahAviv",
         images: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Yonah Aviv - Software Developer",
         description:
-            "React Developer and Former Coding Teacher. Focused on developing sensational software, studying Computer Science and Psychology in Waterloo, Canada.",
+            "Software Developer. Passionate about making an impact through technology.",
         creator: "Yonah Aviv",
         creatorId: "0000000000",
         images: ["./public/metadata.jpg"],
