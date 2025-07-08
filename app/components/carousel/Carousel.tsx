@@ -44,7 +44,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
     const slidersVariants = {
         hover: {
             scale: 1.2,
-            backgroundColor: "black",
+            backgroundColor: "#777",
         },
     };
     const dotsVariants = {
@@ -54,10 +54,10 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
         },
         animate: {
             scale: 1.3,
-            transition: { type: "tween", stiffness: 200, damping: "6" },
+            transition: { type: "linear" },
         },
         hover: {
-            scale: 1.1,
+            scale: 1.3,
             transition: { duration: 0.2 },
         },
     };
