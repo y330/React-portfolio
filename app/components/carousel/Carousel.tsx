@@ -44,7 +44,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
     const slidersVariants = {
         hover: {
             scale: 1.2,
-            backgroundColor: "#ffa51f",
+            backgroundColor: "black",
         },
     };
     const dotsVariants = {
@@ -139,7 +139,7 @@ const Carousel = ({ images, name, id }: CarouselProps) => {
                     {images.map((_, index) => (
                         <motion.div
                             key={index}
-                            className={`CarouselDot bg-[#333] border-2 border-[#ffa51f] rounded-full w-[20px] h-[20px] sm:w-[10px] sm:h-[10px] md:w-[20px] md:h-[20px] lg:w-[20px] lg:h-[20px] ${
+                            className={`CarouselDot bg-[#333] border-2 border-[#fff] rounded-full w-[20px] h-[20px] sm:w-[10px] sm:h-[10px] md:w-[20px] md:h-[20px] lg:w-[20px] lg:h-[20px] ${
                                 currentIndex === index ? "active" : ""
                             }`}
                             initial="initial"
