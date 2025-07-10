@@ -86,7 +86,7 @@ const ProjectCard = ({
                                 id % 2 !== 0 ? "" : ""
                             }`}
                         >
-                            {name.toLowerCase() == "coming soon"
+                            {name.toLowerCase() === "coming soon"
                                 ? "View my GitHub"
                                 : "View Project"}
                         </Link>
