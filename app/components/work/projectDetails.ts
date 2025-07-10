@@ -20,10 +20,7 @@ export type ProjectProps = {
     id: number;
     name: string;
     description: string;
-    technologies: IconType[];
-    techNames: string[];
-    techLinks: string[];
-    github: string;
+    date: string;
     demo: string;
     images: string[];
     available: boolean;
@@ -31,77 +28,61 @@ export type ProjectProps = {
 export const projects = [
     {
         id: 1,
-        name: "ePlant",
+        name: "Gym Website",
         description:
-            "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, using the BAR api",
-        technologies: [SiTypescript, SiReact, SiCytoscapedotjs],
-        techNames: ["TypeScript", "React", "Cytoscape"],
-        techLinks: [
-            "https://www.typescriptlang.org",
-            "https://reactjs.org",
-            "https://cytoscape.org/",
-        ],
-        github: "https://github.com/BioAnalyticResource/ePlant",
-        demo: "https://bioanalyticresource.github.io/ePlant/",
-        images: ["/projects/eplant_1.png", "/projects/eplant_2.png"],
+            "Designed and developed a responsive landing page for a fitness center as a personal project to strengthen front-end development proficiency and design execution",
+        date: "March 2025",
+        demo: "https://github.com/BioAnalyticResource/ePlant",
+        images: ["/projects/gym_website.png"],
         available: true,
     },
     {
         id: 2,
+        name: "ePlant",
+        description:
+            "Contributed to the development of the Chromosome View and Gene Interactions View modules for ePlant, a gene-centric visualization platform for plant genomes. This work was completed as part of my research collaboration with the University of Toronto’s Biology Department",
+        date: "March 2025",
+        demo: "https://github.com/BioAnalyticResource/ePlant",
+        images: ["/projects/eplant_1.png"],
+        available: true,
+    },
+    {
+        id: 3,
         name: "QuickSum",
-        description: "Aesthetic essay summarizer.",
-        technologies: [SiSvelte, SiTypescript, SiSass, SiWebpack],
-        techNames: ["Svelte", "TypeScript", "SASS", "Webpack"],
-        techLinks: [
-            "https://svelte.dev/",
-            "https://www.typescriptlang.org",
-            "https://sass-lang.com/",
-            "https://webpack.js.org/",
-        ],
-        github: "https://github.com/y330/quicksum",
-        demo: "https://quicksum.vercel.app/",
+        description:
+            "Developed an AI-powered tool for summarizing essays with an emphasis on aesthetic coherence and readability",
+        date: "December 2021",
+        demo: "https://github.com/y330/quicksum",
         images: ["/projects/quicksum.png"],
         available: true,
     },
 
     {
-        id: 3,
+        id: 4,
         name: "FragmentQR",
         description:
-            "Browser extension for creating QR codes to text highlights",
-        technologies: [SiJavascript, SiGooglechrome],
-        techNames: ["JavaScript", "Chrome APIs"],
-        techLinks: [
-            "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            "https://developer.chrome.com/docs/extensions/reference/api",
-        ],
-        github: "https://github.com/y330/FragmentQR",
+            "Developed a browser extension that generates QR codes from selected text highlights, streamlining content sharing and cross-device access",
+        date: "September 2021",
         demo: "https://chrome.google.com/webstore/detail/fragmentqr/cabodnfakameckfbbgkciiifempglloj",
-        images: ["/projects/fragmentqr_1.png", "/projects/fragmentqr_2.png"],
+        images: ["/projects/fragmentqr_1.png"],
         available: true,
     },
     {
-        id: 4,
+        id: 5,
         name: "Pydash",
         description:
-            "Python implementation of Geometry dash, a rhythm based platformer game.",
-        technologies: [SiPython, GiGuitarHead],
-        techNames: ["Python", "Pygame"],
-        techLinks: ["https://www.python.org/", "https://www.pygame.org/docs/"],
-        github: "https://github.com/y330/Pydash",
+            "Built a Python-based rhythm platformer inspired by Geometry Dash, featuring timing-sensitive obstacles and animated level progression",
+        date: "March 2020",
         demo: "https://github.com/y330/Pydash",
         images: ["/projects/pydash.png"],
         available: true,
     },
     {
-        id: 5,
+        id: 6,
         name: "Coming Soon",
         description:
-            "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",
-        technologies: [GiGuitarHead],
-        techNames: ["Coming Soon"],
-        techLinks: ["./"],
-        github: "https://github.com/y330/",
+            "New projects are in progress. Check back soon for fresh updates",
+        date: "",
         demo: "https://github.com/y330/",
         images: [""],
         available: false,

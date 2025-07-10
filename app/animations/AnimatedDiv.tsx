@@ -13,7 +13,7 @@ type AnimatedProps = {
 const Animated: React.FC<AnimatedProps> = ({
     className,
     children,
-    delay=0.3
+    delay = 0.3,
 }) => {
     return (
         <div className={className}>
@@ -25,7 +25,7 @@ const Animated: React.FC<AnimatedProps> = ({
                         initial={{
                             opacity: 0,
                             // x:  project.props["id"] % 2 == 0 ? 100 : -100 ,
-                            y: 100
+                            y: 100,
                         }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{

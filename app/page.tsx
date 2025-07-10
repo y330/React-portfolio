@@ -15,7 +15,6 @@ import About from "./sections/About";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-import Skills from "./sections/Skills";
 import Head from "next/head";
 
 export default function Home() {
@@ -67,7 +66,7 @@ export default function Home() {
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <div id="HTML" ref={windowRef}>
-                <PreLoader />
+                {/* <PreLoader /> */}
                 <Blur />
                 <Color />
                 <NavBar />
@@ -79,7 +78,6 @@ export default function Home() {
                     <Hero />
                     <About />
                     <Work />
-                    {/* <Skills /> */}
                     {/* <Blog /> TODO: Low Priority */}
                     <Contact />
                     <Footer />

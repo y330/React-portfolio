@@ -16,10 +16,7 @@ const Footer = () => {
                     className={"m-0 p-0"}
                 />
                 <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
-                    <AnimatedBody
-                        text={"Designed by"}
-                        className={"m-0 p-0"}
-                    />
+                    <AnimatedBody text={"Designed by"} className={"m-0 p-0"} />
                     <Link
                         href="https://github.com/y330"
                         target="_blank"
