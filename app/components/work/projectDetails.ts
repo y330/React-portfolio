@@ -31,7 +31,7 @@ export const projects = [
         name: "Gym Website",
         description:
             "Designed and developed a responsive landing page for a fitness center as a personal project to strengthen front-end development proficiency and design execution",
-        date: "March 2025",
+        date: "July 2025",
         demo: "https://github.com/BioAnalyticResource/ePlant",
         images: ["/projects/gym_website.png"],
         available: true,

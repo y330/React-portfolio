@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useEventListener } from "usehooks-ts";
 
 import PreLoader from "./components/other/PreLoader";
-import useBlobity from "blobity/lib/react/useBlobity";
+// import useBlobity from "blobity/lib/react/useBlobity";
 
 import Blur from "./components/overlay/Blur";
 import Color from "./components/overlay/Color";
@@ -66,7 +66,7 @@ export default function Home() {
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <div id="HTML" ref={windowRef}>
-                {/* <PreLoader /> */}
+                <PreLoader />
                 <Blur />
                 <Color />
                 <NavBar />
