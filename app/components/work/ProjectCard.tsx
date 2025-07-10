@@ -21,7 +21,7 @@ const ProjectCard = ({
     const blankSrc = "/projects/construction.png";
     return (
         <motion.div
-            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[500px] w-full items-stretch justify-center py-0 sm:h-[500px] sm:w-[100%] md:h-[600px] md:w-[100%] lg:h-[500px]`}
+            className="relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-[90%] max-w-[1000px] mx-auto items-stretch justify-center py-0 sm:h-[650px] md:h-[600px] lg:h-[500px]"
             initial="initial"
             animate="animate"
         >
@@ -41,20 +41,12 @@ const ProjectCard = ({
                     alt={name}
                     width={500}
                     height={500}
-                    className={`absolute ${
-                        id % 2 === 0
-                            ? "md:right-2 lg:right-2"
-                            : "md:left-2 lg:left-2"
-                    } sm:w-[80%] md:w-[70%] lg:max-w-[55%] -bottom-4`}
+                    className={`absolute md:right-2 lg:right-2 md:w-[80%] lg:max-w-[55%] -bottom-4`}
                     whileHover={{ scale: 1.05 }}
                 />
 
                 <div
-                    className={`absolute text-white  ${
-                        !(id % 2 === 0)
-                            ? "right-0 top-10 mr-0 ml-10 md:right-0 md:ml-12 md:mr-0 lg:right-0 lg:top-16  lg:mr-4"
-                            : "left-10 top-10 ml-0 md:mr-12 lg:top-16 lg:ml-4"
-                    } mb-10  md:mb-16 lg:mb-14 `}
+                    className={`absolute text-white left-10 top-10 lg:top-16 mb-10  md:mb-16 lg:mb-14 `}
                 >
                     <AnimatedTitle
                         text={name}

@@ -40,7 +40,7 @@ export const projects = [
         id: 2,
         name: "ePlant",
         description:
-            "Contributed to the development of the Chromosome View and Gene Interactions View modules for ePlant, a gene-centric visualization platform for plant genomes. This work was completed as part of my research collaboration with the University of Toronto’s Biology Department",
+            "Developed the Chromosome View and Gene Interactions View for ePlant, a gene-centric visualization tool for plant genomes, developed by University of Toronto",
         date: "March 2025",
         demo: "https://github.com/BioAnalyticResource/ePlant",
         images: ["/projects/eplant_1.png"],

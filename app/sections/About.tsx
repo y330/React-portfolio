@@ -34,7 +34,7 @@ const About = () => {
                         />
                         <AnimatedBody
                             delay={0.3}
-                            text="Outside of software, I produce music that blends flamenco and Middle Eastern guitar sounds with classic rock and modern r&b."
+                            text="Outside of software, I produce music that blends flamenco and Middle Eastern guitar sounds with classic rock and modern R&B."
                         />
                     </div>
                 </div>
